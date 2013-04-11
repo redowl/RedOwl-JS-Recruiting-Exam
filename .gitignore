@@ -3,4 +3,3 @@ node_modules/
 *.iml
 /assets/javascripts/*.js
 .sass-cache/
-/assets/stylesheets/*.css
