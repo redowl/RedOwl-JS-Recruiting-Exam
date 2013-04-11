@@ -20,8 +20,8 @@ Getting Started
 
     Hint: You should be able to run the following commands:
 
-    * `` `$ node -v` `` #(prints the version of node.js installed)
-    * `` `$ npm -v` `` #(prints the version of npm installed)
+    * `$ node -v` #(prints the version of node.js installed)
+    * `$ npm -v` #(prints the version of npm installed)
 
 3.  Install the Node.js [CoffeeScript](http://coffeescript.org/) module globally using npm:
     `` `$ npm install -g coffee-script` `` (depending on your system, this may require the use of sudo)
