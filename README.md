@@ -20,23 +20,30 @@ Getting Started
 
     Hint: You should be able to run the following commands:
 
-    * `$ node -v` #(prints the version of node.js installed)
-    * `$ npm -v` #(prints the version of npm installed)
+        $ node -v   #(prints the version of node.js installed)
+        $ npm -v    #(prints the version of npm installed)
 
 3.  Install the Node.js [CoffeeScript](http://coffeescript.org/) module globally using npm:
-    `` `$ npm install -g coffee-script` `` (depending on your system, this may require the use of sudo)
+
+        $ npm install -g coffee-script    #(depending on your system, this may require the use of sudo)
 
 4.  Install the Node.js [Mocha](http://visionmedia.github.io/mocha/) module globally using npm:
-    `` `$ npm install -g mocha` `` (you will likely need to sudo again)
 
-5.  Use npm to install all of the web application dependencies. Simple execute `` `$ npm install` `` in
+        $ npm install -g mocha    #(you will likely need to sudo again)
+
+5.  Use npm to install all of the web application dependencies. Simple execute `$ npm install` in
     the root directory of the application you cloned from git.
 
 6.  Verify that everything works and is ready to go by running the following commands:
 
-    * `` `$ coffee -v` `` #(prints the version of coffeescript installed)
-    * `` `$ mocha --compilers coffee:coffee-script` `` #(executes the unit test procedures and result in 15 test failures)
-    * `` `$ coffee web.coffee` `` #(will start the web application and print `Server listening on port 3000`)
+        #(prints the version of coffeescript installed)
+        $ coffee -v
+
+        #(executes the unit test procedures and result in 15 test failures)
+        $ mocha --compilers coffee:coffee-script
+
+        #(will start the web application and print `Server listening on port 3000`)
+        $ coffee web.coffee
 
       Hint: Use ctrl-c to terminate the web app process.
 
@@ -54,7 +61,7 @@ Since this analyst is a really good product owner, she was nice enough to write 
 the tests in the test directory of the app: `test/movie-rater-test.coffee`. She's even written you a function stub to
 get started (see `app/movie-rater.coffee`). You'll just have to implement the trimmed average inside of the function
 --taking care to throw Errors when not enough ratings are given or when the input is invalid--and you're done once the
-movie rater unit tests pass (run `` `$ mocha --compilers coffee:coffee-script` `` and you should not see any tests fail
+movie rater unit tests pass (run `$ mocha --compilers coffee:coffee-script` and you should not see any tests fail
 with movieRater() in the name).
 
 If you're really an over-achiever (bonus points here), you'll figure out how to implement this function with a constant
@@ -65,7 +72,7 @@ You did such a great job implementing the movie rater...
 
 ...that the lead engineer wants you to go back and unit test the movie database's data access object
 `app/movie-ratings.coffee`. He has already written unit test stubs in `test/movie-ratings-test.coffee`. You will know you
-are done when you can run `` `$ mocha --compilers coffee:coffee-script` `` multiple times and all of the tests pass.
+are done when you can run `$ mocha --compilers coffee:coffee-script` multiple times and all of the tests pass.
 
 Hint: The MovieRatingsResource does not guarantee the order that ratings are returned is the same as the order they
 are inserted, and your unit tests should handle these cases.
@@ -82,7 +89,7 @@ The web app runs on Node.js using the [Express.js](http://expressjs.com/) framew
 basic RESTful API for accessing and manipulating stored movie ratings data that uses the movie ratings access object
 that you helped test. There is also an http endpoint for calculating the trimmed average of a collection of ratings that
 uses the movie rater that you created. `web.coffee` contains all of your application's routes, and you can start the
-server through the command `` `$ coffee web.coffee` ``. You can view the client by navigating to `localhost:3000` in
+server through the command `$ coffee web.coffee`. You can view the client by navigating to `localhost:3000` in
 your web browser.
 
 Boy, that sure is a beautiful UI, isn't it? Now, it is your chance to show how creative you are by improving it! The
@@ -92,7 +99,7 @@ and comes equipped with [jQuery](http://jquery.com/), [Underscore](http://unders
 
 Some useful hints:
 
-* To compile the CoffeeScript files into JavaScript files use the `` `$ coffee --compile --output ./assets/javascripts/ ./app/assets/coffeescripts/` ``
+* To compile the CoffeeScript files into JavaScript files use the `$ coffee --compile --output ./assets/javascripts/ ./app/assets/coffeescripts/`
   command. You can also use the `--watch` flag to have the compiler run in the background and compile whenever you save
   changes to your CoffeeScript.
 * You can use the [Sass](http://sass-lang.com/) to create simplified stylesheets that are compiled into CSS.
