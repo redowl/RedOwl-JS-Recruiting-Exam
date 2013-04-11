@@ -1,0 +1,18 @@
+{
+  "name": "redowl-js-exam",
+  "version": "0.1.0",
+  "author": "Jesse <jesse@redowlanalytics.com>",
+  "description": "exam for potential UI candidates",
+  "scripts": {
+    "start": "coffee web.coffee"
+  },
+  "dependencies" : {
+    "underscore": "1.4.4",
+    "express": "3.1.1",
+    "hbs": "2.1.0"
+  },
+  "engines": {
+    "node": ">= 0.8",
+    "npm": ">= 1.1"
+  }
+}
