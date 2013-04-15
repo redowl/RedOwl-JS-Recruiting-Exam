@@ -15,8 +15,8 @@ Getting Started
 1.  Set up [git](http://help.github.com/) and clone the repository INSERT REPO LOCATION HERE. We'll leave the details
     for you to work out.
 
-2.  Install the latest [Node.js](http://nodejs.org/) and ensure that you have the
-    Node Package Manager (npm) installed as well.
+2.  Install the latest [Node.js](http://nodejs.org/) and ensure that you have the Node Package Manager (npm) installed
+    as well.
 
     Hint: You should be able to run the following commands:
 
@@ -31,8 +31,15 @@ Getting Started
 
         $ npm install -g mocha    #(you will likely need to sudo again)
 
-5.  Use npm to install all of the web application dependencies. Simple execute `$ npm install` in
-    the root directory of the application you cloned from git.
+5.  For this application we depend on the [ExpressJS](http://expressjs.com/) web application framework, the
+    [UnderscoreJS](http://underscorejs.org/) functional programming library, and the
+    [hbs](https://github.com/donpark/hbs) Handlebars wrapper for ExpressJS applications. In order to locally install all
+    of the project dependencies, run the following command in the root directory of the cloned project:
+
+        $ npm install   #(performs local installation of Node project dependencies)
+
+    Note: You can view the project dependencies and other information in the `package.json` file. Locally installed
+    modules and their dependencies can be found in the node_modules folder.
 
 6.  Verify that everything works and is ready to go by running the following commands:
 
