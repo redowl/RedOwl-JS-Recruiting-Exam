@@ -48,6 +48,10 @@ Getting Started
 
         #(executes the unit test procedures and result in 15 test failures)
         $ mocha --compilers coffee:coffee-script
+        
+        #Note that due to a bug (or feature) in the latest version of mocha
+        #  you may need to run the following command instead
+        $ mocha --recursive --compilers coffee:coffee-script/register
 
         #(will start the web application and print `Server listening on port 3000`)
         $ coffee web.coffee
