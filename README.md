@@ -27,7 +27,7 @@ Getting Started
 
         $ npm install -g coffee-script    #(depending on your system, this may require the use of sudo)
 
-4.  Install the Node.js [Mocha](http://visionmedia.github.io/mocha/) module globally using npm:
+4.  Install the Node.js [Mocha](http://mochajs.org/) module globally using npm:
 
         $ npm install -g mocha    #(you will likely need to sudo again)
 
